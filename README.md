@@ -1,4 +1,4 @@
-# Script for extracting 2D human pose from images
+# Script for estimating 2D human pose from RGB images using Openpose
 **Code Author: Shih-Yao (Mike) Lin**
 
 ## Features
@@ -20,7 +20,7 @@
 ```bash
 git https://github.com/mikeshihyaolin/2d_pose_openpose.git
 ```
-The directory tree should look like this:
+The directory tree:
 ```
 ${ROOT}
 ├── README.md
