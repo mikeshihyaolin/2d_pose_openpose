@@ -28,9 +28,15 @@ ${ROOT}
 ```
 
 * Install dependencies
-```
-pip3 install -r ./requirements.txt
-```
+	+ dependencies
+	```
+	pip3 install -r ./requirements.txt
+	```
+	+ docker
+	```
+	sudo snap install docker
+	```
+
 
 ## Usages
 1. convert a video to images 
@@ -40,12 +46,15 @@ python video2img.py -i [video_path] -o [image_folder_path]
 2. download and run openpose docker
 	0. pull a openpose docker
 	```
-	docker pull david800131s/openpose_t10_2:latest
+	sudo docker pull wenwu449/openpose
 	```
+		0. list all docker images 
+		```
+		docker images -a
+		```
 	1. run docker
 	```
 	docker run --runtime=nvidia --rm -e DISPLAY=$DISPLAY -v [data folder]:/data/ -v [results folder]:/res/  -w /openpose/ -it  1a739316c6a7 bash  
-	cd /openpose/
 	```
 	2. run openpose
 	```
