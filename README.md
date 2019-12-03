@@ -48,7 +48,7 @@ python video2img.py -i [video_path] -o [image_folder_path]
 	```
 	sudo docker pull wenwu449/openpose
 	```
-		+list all docker images 
+		+ list all docker images 
 		```
 		docker images -a
 		```
