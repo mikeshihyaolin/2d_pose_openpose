@@ -1,0 +1,4 @@
+glob2==0.6
+opencv-python==3.4.4.19
+
+
