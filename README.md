@@ -48,10 +48,6 @@ python video2img.py -i [video_path] -o [image_folder_path]
 	```
 	sudo docker pull wenwu449/openpose
 	```
-		+ list all docker images 
-		```
-		docker images -a
-		```
 	1. run docker
 	```
 	docker run --runtime=nvidia --rm -e DISPLAY=$DISPLAY -v [data folder]:/data/ -v [results folder]:/res/  -w /openpose/ -it  1a739316c6a7 bash  
