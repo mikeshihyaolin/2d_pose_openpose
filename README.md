@@ -38,9 +38,14 @@ pip3 install -r ./requirements.txt
 python video2img.py -i [video_path] -o [image_folder_path]  
 ```
 2. download and run openpose docker
-	1. pull docker
+	0. pull a openpose docker
 	```
 	docker pull david800131s/openpose_t10_2:latest
+	```
+	1. run docker
+	```
+	docker run --runtime=nvidia --rm -e DISPLAY=$DISPLAY -v [data folder]:/data/ -v [results folder]:/res/  -w /openpose/ -it  1a739316c6a7 bash  
+	cd /openpose/
 	```
 	2. run openpose
 	```
