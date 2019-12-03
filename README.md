@@ -49,7 +49,7 @@ python video2img.py -i [video_path] -o [image_folder_path]
 	/openpose/build/examples/openpose/openpose.bin --image_dir /data/img --write_json /data/json/ --write_images /data/img/ --display 0 --face --hand 
 	```
 
-+Step 3: convert and save json files to h5 files (optional)
+3. convert and save json files to h5 files (optional)
 ```
 python ./openpose_data_processing/json2h5.py -i [json folder] -o [output_h5_path]
 ```
