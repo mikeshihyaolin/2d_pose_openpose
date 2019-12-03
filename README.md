@@ -1,6 +1,8 @@
 # Script for estimating 2D human pose from RGB images by using Openpose
 **Code Author: Shih-Yao (Mike) Lin**
 
+![](figs/cat_example.jpg)
+
 ## Features
 + Convert a video to images
 + Extract 2D human pose from 2D RGB images by using Openpose 
@@ -54,7 +56,7 @@ python video2img.py -i [video_path] -o [image_folder_path]
 	```
 	2. run openpose
 	```
-	/openpose/build/examples/openpose/openpose.bin --image_dir /data/img --write_json /data/json/ --write_images /data/img/ --display 0 --face --hand 
+	/openpose/build/examples/openpose/openpose.bin --image_dir /data/ --write_json /res/json/ --write_images /res/img/ --display 0 --face --hand 
 	```
 
 3. convert and save json files to h5 files (optional)
