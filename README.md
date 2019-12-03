@@ -1,4 +1,4 @@
-# Script for estimating 2D human pose from RGB images using Openpose
+# Script for estimating 2D human pose from RGB images by using Openpose
 **Code Author: Shih-Yao (Mike) Lin**
 
 ## Features
@@ -7,11 +7,7 @@
 + Convert the extracted Json files (body keypoints) into h5 files
 
 ## Dependencies
-+ python3
-+ glob2
-+ opencv-python
-+ ffmpeg
-+ docker
++ python3, glob2, opencv-python, ffmpeg, docker
 
 ## Installation
 
@@ -55,6 +51,7 @@ python video2img.py -i [video_path] -o [image_folder_path]
 ```
 python ./openpose_data_processing/json2h5.py -i [json folder] -o [output_h5_path]
 ```
+4. crop images to make the detected person in the center of images (optional)
 
 
 
