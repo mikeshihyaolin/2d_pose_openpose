@@ -9,7 +9,8 @@
 ## Dependencies
 + python3
 + glob2
-+ opencv-python 
++ opencv-python
++ ffmpeg
 + docker
 
 ## Installation
