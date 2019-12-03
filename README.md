@@ -19,6 +19,13 @@ git https://github.com/mikeshihyaolin/2d_pose_openpose.git
 ```
 The directory tree should look like this:
 ```
+${ROOT}
+├── README.md
+├── openpose_data_processing
+│   ├── img2h5.py
+│   └── json2h5.py
+├── requirements.txt
+└── video2img.py
 
 ```
 
@@ -44,7 +51,7 @@ python video2img.py -i [video_path] -o [image_folder_path]
 
 +Step 3: convert and save json files to h5 files (optional)
 ```
-python openpose_data_processing/json2h5.py -i [json folder] -o [output_h5_path]
+python ./openpose_data_processing/json2h5.py -i [json folder] -o [output_h5_path]
 ```
 
 
