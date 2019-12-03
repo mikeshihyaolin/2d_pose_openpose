@@ -3,6 +3,8 @@
 
 ## Features
 + Convert a video to images
++ Extract 2D human pose from 2D RGB images by using Openpose 
++ Convert the extracted Json files (body keypoints) into h5 files
 
 ## Dependencies
 + python3
@@ -26,7 +28,6 @@ ${ROOT}
 │   └── json2h5.py
 ├── requirements.txt
 └── video2img.py
-
 ```
 
 * Install dependencies
