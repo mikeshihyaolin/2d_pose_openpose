@@ -22,9 +22,7 @@ The directory tree:
 ```
 ${ROOT}
 ├── README.md
-├── openpose_data_processing
-│   ├── img2h5.py
-│   └── json2h5.py
+├── crop_people.py
 ├── requirements.txt
 └── video2img.py
 ```
