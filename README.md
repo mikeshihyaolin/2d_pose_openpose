@@ -1,5 +1,5 @@
 # Script for estimating 2D human pose from RGB images by using Openpose
-**Script Author: Shih-Yao (Mike) Lin**
+**Code Author: Shih-Yao (Mike) Lin**
 
 ![](figs/demo3.gif)
 
