@@ -1,12 +1,12 @@
 # Script for estimating 2D human pose from RGB images by using Openpose
-**Code Author: Shih-Yao (Mike) Lin**
+**Script Author: Shih-Yao (Mike) Lin**
 
-![](figs/demo2.gif)
+![](figs/demo3.gif)
 
 ## Features
 + Convert a video to images
 + Extract 2D human pose from 2D RGB images by using Openpose 
-+ Convert the extracted Json files (body keypoints) into h5 files
++ Crop image and set people in the center of the new image 
 
 ## Dependencies
 + python3, glob2, opencv-python, ffmpeg, docker
@@ -46,24 +46,22 @@ ${ROOT}
 python video2img.py -i [video_path] -o [image_folder_path]  
 ```
 2. download and run openpose docker
-	0. pull a openpose docker
+	1. pull a openpose docker
 	```
 	sudo docker pull wenwu449/openpose
 	```
-	1. run docker
+	2. run docker
 	```
 	docker run --runtime=nvidia --rm -e DISPLAY=$DISPLAY -v [data folder]:/data/ -v [results folder]:/res/  -w /openpose/ -it  1a739316c6a7 bash  
 	```
-	2. run openpose
+	3. run openpose
 	```
 	/openpose/build/examples/openpose/openpose.bin --image_dir /data/ --write_json /res/json/ --write_images /res/img/ --display 0 --face --hand 
 	```
 
-3. convert and save json files to h5 files (optional)
+3. crop images to make the detected person in the center of images (optional)
 ```
-python ./openpose_data_processing/json2h5.py -i [json folder] -o [output_h5_path]
+python3 crop_people.py -i [image path] -j [kjson path] -o [output image path]
 ```
-4. crop images to make the detected person in the center of images (optional)
-
 
 
