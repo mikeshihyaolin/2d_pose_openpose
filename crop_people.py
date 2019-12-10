@@ -108,11 +108,11 @@ def preprocessing(input_img_folder, input_keypoint_folder, output_folder):
 		# calculate bbox and bbox center
 		center, bbox = find_bbox_and_center(keypoint, img_w, img_h)
 
-		# if bbox != []:
-		# 	img_copy = img.copy()
-		# 	cv2.circle(img_copy, center, radius, color, thickness) 
-		# 	cv2.rectangle(img_copy, bbox[0], bbox[1], (0,255,0), 2)
-		# 	cv2.imwrite(output_folder+"/_bbox_%04d.jpg"%i,img_copy)
+		if bbox != []:
+			img_copy = img.copy()
+			cv2.circle(img_copy, center, radius, color, thickness) 
+			cv2.rectangle(img_copy, bbox[0], bbox[1], (0,255,0), 2)
+			cv2.imwrite(output_folder+"/_bbox_%04d.jpg"%i,img_copy)
 
 		# resize image
 		resized_img = img.copy()
