@@ -2,7 +2,6 @@
 **Code Author: Shih-Yao (Mike) Lin**
 
 ![](figs/demo4.gif)
-*The 2D human pose inference is based on [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
 
 ## Features
 + Convert a video to images
@@ -62,3 +61,6 @@ python video2img.py -i [video_path] -o [image_folder_path]
 ```
 python3 crop_people.py -i [image path] -j [kjson path] -o [output image path]
 ```
+
+*The 2D human pose inference is based on [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
+
