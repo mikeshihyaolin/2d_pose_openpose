@@ -16,7 +16,7 @@
 * Clone this repo
 
 ```bash
-git https://github.com/mikeshihyaolin/2d_pose_openpose.git
+git clone https://github.com/mikeshihyaolin/2d_pose_openpose.git
 ```
 The directory tree:
 ```
